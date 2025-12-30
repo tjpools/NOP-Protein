@@ -1,0 +1,31 @@
+
+nop_benchmark.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	48 83 ec 08          	sub    $0x8,%rsp
+   4:	bf 00 00 00 00       	mov    $0x0,%edi
+   9:	e8 00 00 00 00       	call   e <main+0xe>
+   e:	48 89 c3             	mov    %rax,%rbx
+  11:	b9 00 00 00 00       	mov    $0x0,%ecx
+
+0000000000000016 <main.loop>:
+  16:	90                   	nop
+  17:	48 ff c1             	inc    %rcx
+  1a:	bf 00 00 00 00       	mov    $0x0,%edi
+  1f:	e8 00 00 00 00       	call   24 <main.loop+0xe>
+  24:	48 39 d8             	cmp    %rbx,%rax
+  27:	74 ed                	je     16 <main.loop>
+  29:	48 89 0c 25 00 00 00 	mov    %rcx,0x0
+  30:	00 
+  31:	48 bf 00 00 00 00 00 	movabs $0x0,%rdi
+  38:	00 00 00 
+  3b:	48 8b 34 25 00 00 00 	mov    0x0,%rsi
+  42:	00 
+  43:	48 ba 00 00 00 00 00 	movabs $0x0,%rdx
+  4a:	00 00 00 
+  4d:	e8 00 00 00 00       	call   52 <main.loop+0x3c>
+  52:	48 83 c4 08          	add    $0x8,%rsp
+  56:	c3                   	ret    
