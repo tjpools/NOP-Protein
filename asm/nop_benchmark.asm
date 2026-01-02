@@ -23,9 +23,11 @@ section .text
 
 main:
     ; Proper stack frame setup
+    ; After call from _start, stack is misaligned by 8 bytes (return address)
+    ; Push rbp (8 bytes) then sub rsp, 8 more to get 16-byte alignment
     push rbp
     mov rbp, rsp
-    sub rsp, 8          ; Align stack to 16 bytes
+    sub rsp, 8          ; Total 16-byte adjustment for alignment
     
     ; Get start time
     mov rdi, 0
@@ -92,9 +94,8 @@ main:
     syscall
 
     ; Clean up and return
-    add rsp, 8
-    mov rbp, rsp
-    pop rbp
+    add rsp, 8              ; Restore stack pointer
+    pop rbp                 ; Restore base pointer
     xor eax, eax            ; return 0
     ret
 
