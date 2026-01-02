@@ -1,0 +1,30 @@
+Spigot Algorithm for Pi (Pseudocode)
+
+1. Set NDIGITS to desired number of digits (e.g., 100)
+2. Set LEN = 10 * NDIGITS / 3
+3. Create array a[LEN], initialize all elements to 2
+4. Set nines = 0, predigit = 0
+5. Print "3."
+6. For k = 0 to NDIGITS-1:
+    a. Set q = 0
+    b. For i = LEN-1 down to 0:
+        i.   x = 10 * a[i] + q
+        ii.  a[i] = x % (2 * i + 1)
+        iii. q = x / (2 * i + 1)
+    c. a[0] = q % 10
+    d. q = q / 10
+    e. If q == 9:
+        i.   nines += 1
+    f. Else if q == 10:
+        i.   Print predigit + 1
+        ii.  Print '0' nines times
+        iii. predigit = 0
+        iv.  nines = 0
+    g. Else:
+        i.   Print predigit
+        ii.  predigit = q
+        iii. If nines > 0:
+                Print '9' nines times
+                nines = 0
+7. Print predigit
+8. End
