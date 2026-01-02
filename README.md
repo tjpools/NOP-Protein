@@ -27,7 +27,7 @@ But more than a benchmark, this is an exercise in **stewardship**—an attempt t
 We stand on a mountain of accumulated knowledge, each peak built by giants who dedicated their lives to pushing back the darkness:
 
 ### The Ancient Foundations (250 BCE - 1600 CE)
-- **Diophantus of Alexandria** (~250 CE) — The "father of algebra," whose *Arithmetica* posed problems that would haunt mathematicians for centuries. His margins became legendary.
+- **Diophantus of Alexandria** (~250 CE) — The "father of algebra," whose *Arithmetica* posed problems that would haunt mathematicians for centuries.
 - **Muhammad ibn Musa al-Khwarizmi** (~780-850 CE) — Gave us "algorithm" and "algebra," bridging Greek and Indian mathematics.
 - **Omar Khayyam** (1048-1131) — Poet, astronomer, mathematician; solved cubic equations geometrically.
 - **Fibonacci** (Leonardo of Pisa) (~1170-1250) — Brought Hindu-Arabic numerals to Europe; revealed nature's recursive beauty.
@@ -112,10 +112,10 @@ Each language is a different **protein fold** around the same active site (the N
 |-----------|------------------|-------------------------------------------|
 | Assembly  | 196,579,520      | Raw substrate, minimal fold               |
 | C         | 162,657,694      | ABI + calling conventions                 |
-| Julia     | 16,744,158       | JIT hybrid, LLVM backend                  |
-| Rust      | 13,992,474       | Safety-first, ownership checking          |
 | C++       | 5,694,705        | Heavy abstraction, template instantiation |
 | Python    | 2,853,013        | Interpreter, dynamic dispatch             |
+| Rust      | 13,992,474       | Safety-first, ownership checking          |
+| Julia     | 16,744,158       | JIT hybrid, LLVM backend                  |
 
 The 69× difference between Assembly and Python is **not a criticism**—it is a measurement of the structure each language provides. Python gives you expressiveness, safety, and flexibility. Assembly gives you control and speed. Both are valid trades.
 
