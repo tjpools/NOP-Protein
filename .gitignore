@@ -1,0 +1,33 @@
+# Compiled binaries
+nop_benchmark
+nop_benchmark_rebuilt
+
+# Object files
+*.o
+
+# Hex dumps and disassemblies (generated files)
+*.hexdump.txt
+*.objdump.txt
+docs/disassemblies/
+
+# Python
+__pycache__/
+*.pyc
+
+# Rust
+target/
+
+# C/C++
+*.out
+a.out
+
+# Julia
+*.ji
+
+# Backup files
+*~
+*.bak
+
+# IDE
+.vscode/
+.idea/
