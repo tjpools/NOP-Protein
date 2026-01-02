@@ -4,7 +4,7 @@
 > — Isaac Newton, 1675
 
 > *"The margins overflow."*  
-> — Pierre de Fermat, Diophantus's *Arithmetica*
+> — Pierre de Fermat, in the margin of his copy of Diophantus's *Arithmetica*
 
 ## Overview: The Three Quests
 
