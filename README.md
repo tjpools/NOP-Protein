@@ -112,7 +112,7 @@ Each language is a different **protein fold** around the same active site (the N
 |-----------|------------------|-------------------------------------------|
 | Assembly  | 196,579,520      | Raw substrate, minimal fold               |
 | C         | 162,657,694      | ABI + calling conventions                 |
-| C++       | 5,694,705        | Heavy abstraction, template instantiation |
+| C++       | 5,694,705        | Heavy scaffolding, templates, RTTI        |
 | Python    | 2,853,013        | Interpreter, dynamic dispatch             |
 | Rust      | 13,992,474       | Safety-first, ownership checking          |
 | Julia     | 16,744,158       | JIT hybrid, LLVM backend                  |
@@ -191,7 +191,7 @@ A multi-language benchmark measuring NOP instruction throughput across Assembly,
 
 **Purpose:** Measure the empirical cost of abstraction. Make the invisible visible.
 
-**Key Insight:** The 69× difference between Assembly (196M NOPs/sec) and Python (2.8M NOPs/sec) quantifies the structure each language adds. This is not good or bad—it is **revelatory**.
+**Key Insight:** The 69× difference between Assembly (196.6M NOPs/sec) and Python (2.85M NOPs/sec) quantifies the structure each language adds. This is not good or bad—it is **revelatory**.
 
 **Philosophical Framing:** Just as Galois used symmetry groups to determine polynomial solvability, we use throughput measurements to map the structure of language runtimes. The measurement *is* the insight.
 
